@@ -1,15 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    font-family: 'Hero Sans Serif',Roboto, sans-serif;
+    box-sizing: content-box;
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
-    font-family: 'Hero Sans Serif',roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
 }
 
 .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #1f2937;
     color: #f9faf8;
 }
 
-a {
-    text-decoration: none;
-    color: #e5e7eb;
+.top-bar {
+    padding-top: 20px;
+    display:flex;
+    width: 1000px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .logo {
@@ -17,10 +35,38 @@ a {
     font-weight: 800;
 }
 
-.header-text,
 .header-links {
     font-size: 18px;
     color: #e5e7eb;
+    display: flex;
+    gap: 24px;
+}
+
+.header-content {
+    width: 1000px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+}
+
+.header-text {
+    font-size: 18px;
+    color: #e5e7eb;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+.header-image {
+    background-color: grey;
 }
 
 .header-title {
@@ -28,12 +74,106 @@ a {
     font-weight: 900;
 }
 
-.body-title,
-.quote {
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 50px; */
+}
+
+.img-container {
+    display: flex;
+    width: 1000px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 0 100px 0;
+
+}
+
+.img {
+    border: 2px solid blue;
+    border-radius: 12px;
+    display: flex;
+    width: 150px;
+    height: 150px;
+}
+
+.didascalia {
+    width: 150px;
+    text-align: center;
+}
+
+.body-title {
     font-size: 36px;
     color: #1f2937;
+    padding-top: 50px;
 }
 
 .quote-container {
     background-color: #e5e7eb;
+    width: 100%;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote {
+    width: 800px;
+    font-size: 36px;
+    color: #1f2937;
+    font-style: italic;
+    font-weight: light;
+}
+
+.quote-signature {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+}
+
+
+.join {
+    margin: 100px;
+    width: 900px;
+    background-color: #3882f6;
+    border-radius: 12px;
+    color: #f9faf8;
+    font-size: 18px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.join-title {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.join button {
+    border: 2px solid #e5e7eb;
+    padding: 2px 40px;
+}
+
+.header button {
+    border: none;
+    padding: 4px 32px;
+}
+
+.footer {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
