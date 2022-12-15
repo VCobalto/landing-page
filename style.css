@@ -5,14 +5,16 @@
     box-sizing: content-box;
     padding: 0px;
     margin: 0px;
+}
 
+html {
+    min-width: fit-content;
 }
 
 body {
     display: flex;
-    flex: 1 1 auto;
     flex-direction: column;
-    justify-items: space-between;
+    justify-content: space-between;
 }
 
 .header {
@@ -50,7 +52,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 80px;
+    padding: 80px 0px;
 }
 
 .header-text {
@@ -145,7 +147,7 @@ a {
     border-radius: 12px;
     color: #f9faf8;
     font-size: 18px;
-    padding: 40px;
+    padding: 40px 0px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -175,7 +177,7 @@ button {
 .footer {
     background-color: #1f2937;
     color: #e5e7eb;
-    padding: 40px;
+    padding: 40px 0px;
     display: flex;
     justify-content: center;
     align-content: center;
